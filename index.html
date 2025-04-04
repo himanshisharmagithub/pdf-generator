@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generate a PDF</h1>
+        <textarea id="pdfContent" placeholder="Enter text for the PDF..."></textarea>
+        <input type="file" id="imageInput" accept="image/*">
+        <button onclick="generatePDF()">Download PDF</button>
+    </div>
+
+    <!-- Load jsPDF first, then script.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
